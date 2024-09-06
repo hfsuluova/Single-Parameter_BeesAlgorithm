@@ -80,10 +80,7 @@ else
     lmt = n;
 end
 for K = 1:lmt
-    %[idx,C,~,D] = kmeans(A(:,2:end),K);
-    %[idx1,C1,~,D1] = kmeans(A1(:,2:(Dims+1)),K);
     [idx,C,~,D] = kmeans(B,K);
-    %[idx,C,~,D] = kmeans(X(:,2),K);
     Clustering(K).Name=K;
     Clustering(K).Indexes= idx;
     Clustering(K).Centroids = C;
