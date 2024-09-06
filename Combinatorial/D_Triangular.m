@@ -1,7 +1,7 @@
-function [ M ] = D_Triangular (k,t,b,baris,kolom)
-    M=zeros(baris,kolom);
-    for i=1:baris
-        for j=1:kolom
+function [ M ] = D_Triangular (k,t,b,row,column)
+    M=zeros(row,column);
+    for i=1:row
+        for j=1:column
 
             M(i,j)=D_Tri_real(k,t,b);
             
